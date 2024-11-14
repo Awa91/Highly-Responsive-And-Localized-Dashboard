@@ -1,0 +1,55 @@
+{
+  "hero":{
+    "title":"Find Your Dream Job",
+    "subtitle":"Freelance Jobs and Talents at Your Fingertips",
+    "description":"Connect with top freelancers and clients on our platform! Find your perfect match for your next project.",
+    "quantifier":"Over",
+    "figure":"12800",
+    "statement":"freelancers to complete your projects",
+    "cardFigure":"30",
+    "cardStatement":"People got hired"
+    
+},
+ "doughnutLabel":"Users gain",
+ "doughnutData":[
+    {
+        "id": 1,
+        "year": 2016,
+        "userGain": 80000,
+        "userLost": 823
+      },
+      {
+        "id": 2,
+        "year": 2017,
+        "userGain": 45677,
+        "userLost": 345
+      },
+      {
+        "id": 3,
+        "year": 2018,
+        "userGain": 78888,
+        "userLost": 555
+      },
+      {
+        "id": 4,
+        "year": 2019,
+        "userGain": 90000,
+        "userLost": 4555
+      },
+      {
+        "id": 5,
+        "year": 2020,
+        "userGain": 4300,
+        "userLost": 234
+      }
+ ],
+"sidebarText":{
+"dashboard": "Dashboard",
+"editProfile":"Edit Profile",
+"contracts":"Contracts",
+"reviews": "Reviews",
+"analytics": "Analytics",
+"search": "Search"
+}   
+
+}

@@ -1,13 +1,26 @@
-
+import React,{lazy, Suspense} from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { UserDashboard } from './components/Dashboard';
 import './App.css'
+import { UserLayout } from './UserLayout';
 
-function App() {
-  
+
+export const App = React.memo(() => {
+
   return (
     <>
-     <p>Highly Responsive and localized dashboard</p>
+      <BrowserRouter>
+      <Suspense fallback={''}>
+       <Routes>
+          <Route path='/' element={<UserLayout />}>
+            <Route index element={<UserDashboard />} />
+            <Route path='/dashboard' element={<UserDashboard />} />
+          </Route>
+        </Routes>
+      </Suspense>
+      </BrowserRouter>
     </>
   )
 }
+);
 
-export default App
