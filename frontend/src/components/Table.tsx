@@ -13,7 +13,7 @@ interface TableProps {
 
 export const Table: React.FC<TableProps> = ({ dataToDisplay }) => {
   return (
-    <table>
+    <table className="text-light dark:text-dark text-xs tracking-wider font-poppins">
       <thead>
         <tr>
           {Object.keys(dataToDisplay[0]).map((key) => {

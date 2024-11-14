@@ -1,0 +1,92 @@
+{
+
+  "section": [
+        {
+            "title": "Some title",
+            "subtitle": "Some subtitle",
+            "description": "Some description"    
+        },
+        {
+            "title": "Some title 1",
+            "subtitle": "Some subtitle 1",
+            "description": "Some description 1"    
+        },
+        {
+            "title": "Some title 2",
+            "subtitle": "Some subtitle 2",
+            "description": "Some description 2"    
+        }
+    ],
+  "applicationStatus":[
+    {
+      "status": "Appliqué",
+      "applicationDate": "22 Janvier",
+      "jobTitle": "Traducteur Chinois",
+      "company": "Troopsy Tech",
+      "location": "Jurong East, Singapore",
+      "jobRequirement": {"requirement":["Télécommande", "Contracter"] }},
+      {
+          "status": "Rejeté",
+          "applicationDate": "12 Janvier",
+          "jobTitle": "Traducteur Chinois",
+          "company": "Appsot",
+          "location": "Jurong East, Singapore",
+          "jobRequirement": {"requirement":["Télécommande", "Contracter"] }},
+          {
+              "status": "Interviewé",
+              "applicationDate": "02 Janvier",
+              "jobTitle": "Traducteur Chinois",
+              "company": "Google",
+              "location": "Jurong East, Singapore",
+              "jobRequirement": {"requirement":["Télécommande", "Contracter"] }}
+          ],
+          "searchPlaceholder":"Recherche par statut ou entreprise",
+          "viewAll":"Voir tout",
+          "appStatusTitle":"Statut de la demande",
+          "next": "Suivant",
+          "prev":"Précé",
+          
+  
+    "doughnutLabel":"Les utilisateurs gagnent",
+    "doughnutData":[
+       {
+           "id": 1,
+           "year": 2016,
+           "userGain": 80000,
+           "userLost": 823
+         },
+         {
+           "id": 2,
+           "year": 2017,
+           "userGain": 45677,
+           "userLost": 345
+         },
+         {
+           "id": 3,
+           "year": 2018,
+           "userGain": 78888,
+           "userLost": 555
+         },
+         {
+           "id": 4,
+           "year": 2019,
+           "userGain": 90000,
+           "userLost": 4555
+         },
+         {
+           "id": 5,
+           "year": 2020,
+           "userGain": 4300,
+           "userLost": 234
+         }
+    ],
+   "sidebarText":{
+   "dashboard": "Tableau de bord",
+   "editProfile":"Modifier le profil",
+   "contracts":"Contrats",
+   "reviews": "Avis",
+   "analytics": "Analytique",
+   "search": "Recherche"
+   }   
+   
+   }

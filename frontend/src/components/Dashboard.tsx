@@ -17,7 +17,7 @@ export const UserDashboard = React.memo(() => {
   const [data, setData] = useState<Todo[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
-
+  
 
   const [currentPageNumber, setCurrentPageNumber] = useState<number>(1);
   const [dataToDisplay, setDataToDisplay] = useState<Todo[]>([]);
@@ -75,7 +75,7 @@ export const UserDashboard = React.memo(() => {
       {/* max-w-5xl ml-40  sm:ml-32*/}
       <div className=" m-0 mx-auto antialiased ">
         {/* <!--Outer most Grid --> */}
-        <div className="grid lg:grid-cols-6 xl:grid-cols-6 2xl:grid-cols-6 gap-4 mt-20">
+        <div className="grid lg:grid-cols-6 xl:grid-cols-6 2xl:grid-cols-6 gap-4 mt-20 bg-light dark:bg-black">
           {/* First Column (80% width)  */}
           <div className="lg:col-span-4 xl:col-span-4 2xl:col-span-4 p-4 mx-auto">
           
@@ -90,7 +90,7 @@ export const UserDashboard = React.memo(() => {
                 <div className="grid lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 gap-4">
 
                   {/* First Column */}
-                  <div className="  p-4">
+                  <div className="2xl:ml-20  p-4">
                    
                     <DoughnutComponent />
 
@@ -107,7 +107,7 @@ export const UserDashboard = React.memo(() => {
               </div>
 
               {/*  Second Column  */}
-              <div className="  p-4">
+              <div className="2xl:ml-28  p-4">
                
 
                 {/* Page selection */}
@@ -117,11 +117,12 @@ export const UserDashboard = React.memo(() => {
                     name="page-number"
                     onChange={handleSelectChange}
                     value={currentPageNumber}
+                  
                   >
                     {Array.from(Array(data.length / TOTAL_VALUES_PER_PAGE))
                       .map((e, i) => i + 1)
                       .map((val) => {
-                        return <option key={val}>{val}</option>;
+                        return <option className="text-light dark:text-dark text-xs font-poppins" key={val}>{val}</option>;
                       })}
                   </select>
                 </div>
@@ -131,9 +132,9 @@ export const UserDashboard = React.memo(() => {
                 <Table dataToDisplay={dataToDisplay} />
 
                 {/* Pagination */}
-                <div id="btn-container">
-                  <button onClick={goOnPrevPage}>Prev</button>
-                  <button onClick={goOnNextPage}>Next</button>
+                <div className="mx-32 mt-5 font-poppins text-xs text-light dark:text-dark">
+                  <button className="mr-4 p-2" onClick={goOnPrevPage}>{t('prev')}</button>
+                  <button onClick={goOnNextPage}>{t('next')}</button>
                 </div>
                 {/* end Pagination */}
 
@@ -148,6 +149,8 @@ export const UserDashboard = React.memo(() => {
           <div className="lg:col-span-2 xl:col-span-2 2xl:col-span-2  p-4 mx-auto">
            
             <CardWithList />
+ 
+         
           </div>
 
         </div>
